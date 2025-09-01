@@ -9,7 +9,7 @@ const sobrenome = null; //Null -> Não aponta para local nenhum na memória / nu
 const booleanTrue = true; //Boolean
 const booleanFalse = false; //Boolean
 
-console.log(typeof nome, nome);
+console.log(typeof nome, nome); // typeof - mostra qual o tipo do valor/variavel
 console.log(typeof nome1, nome1);
 console.log(typeof nome2, nome2);
 console.log(typeof num1, num1);
