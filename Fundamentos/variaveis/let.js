@@ -1,6 +1,6 @@
 /** Sempre utilizar camelCase
  * 
- * Case-sensitive
+ * Case-sensitive - reconhece diferenças entre maiúsculas e minúsculas
  * 
  * LET QUANDO O VALOR MUDAR
  * 
@@ -18,8 +18,8 @@
  * 
  * Não podemos redeclarar variáveis com let mas podemos mudar o valor atribuido
  * 
- * Ex erro - let nome = 'Jose';
- *           let nome;
+ * Ex errado - let nome = 'Jose';
+ *             let nome = 'Luiz';
  * 
  * Ex certo - let nome = 'Jose';
  *            nome = 'Luiz';

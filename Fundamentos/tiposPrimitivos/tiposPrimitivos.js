@@ -1,9 +1,9 @@
 // Tipos de dados primitivos - string, number, undefined, null e boolean
 const nome = `Luiz`; //String
-const nome1 = 'Luiz'; //String
+const nome1 = "Luiz"; //String
 const nome2 = "Luiz"; //String
 const num1 = 10; //Number
-const num2 = 1.10; //Number
+const num2 = 1.1; //Number
 let nomeAluno; //Undefined -> Não aponta para local nenhum na mémoria / não tem como ser definido
 const sobrenome = null; //Null -> Não aponta para local nenhum na memória / null precisa ser definido / desconfigurando uma variável
 const booleanTrue = true; //Boolean
@@ -24,7 +24,7 @@ console.log(typeof booleanFalse, booleanFalse);
 const a = [1, 2]; //Arrays apontam para o mesmo lugar na memória
 const b = a;
 
-console.log(a, b); 
+console.log(a, b);
 
 b.push(3); // .push é um método para adicionar um novo valor no final de um array
 

@@ -4,13 +4,15 @@ let varC = `C`; // A
 
 console.log(varA, varB, varC);
 
-[varA, varB, varC] = [varB, varC, varA]
+[varA, varB, varC] = [varB, varC, varA];
 console.log(varA, varB, varC);
 
 // Outra maneira
-/* const varATemp = varA;
+/* 
+const varATemp = varA;
 varA = varB;
 varB = varC;
 varC = varATemp;
 
-console.log(varA, varB, varC); */
+console.log(varA, varB, varC); 
+*/

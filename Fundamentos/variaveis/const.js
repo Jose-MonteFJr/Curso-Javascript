@@ -1,6 +1,6 @@
 /** Sempre utilizar camelCase
  * 
- * Case-sensitive
+ * Case-sensitive - reconhece diferenças entre maiúsculas e minúsculas
  * 
  * CONST QUANDO O VALOR FOR FIXO
  * 
@@ -18,10 +18,11 @@
  * 
  * Não pode modificar o valor de uma constante nem inicializar ela sem valor
  * 
+ * Ex - const cliente = 'Joao';
+ *      cliente = 'Miguel';
+ * 
  * Ex - const nome;
  * 
- * Ex- const cliente = 'Joao';
- *     cliente = 'Miguel';
  *      
  * NÃO UTILIZE VAR, UTILIZE CONST.
  */
