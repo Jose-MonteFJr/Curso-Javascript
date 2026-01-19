@@ -40,4 +40,4 @@ console.log(c, d); // 2 2
 c = 3;
 
 console.log(c, d); // 3 2
-// d não atualiza o novo valor de c, permanece estagnado no primeiro valor "2"
+// d não atualiza o novo valor de c, permanece estagnado no primeiro valor "2" pois não aponta para o mesmo lugar na memória
