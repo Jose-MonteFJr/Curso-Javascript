@@ -50,3 +50,10 @@ console.log(alunos.slice(0, 3)); // .slice fatia e me retorna os valores entre o
 
 console.log(typeof alunos); // Retorna object
 console.log(alunos instanceof Array); // instanceof verifica se faz parte do tipo escolhido
+
+// Arrays dentro de arrays
+//                     0          1          2
+//                  0  1  2    0  1  2    0  1  2
+const numeros = [  [1, 2, 3], [4, 5, 6], [7, 8, 9],];
+
+console.log(numeros[1][2]); // acessar o 6

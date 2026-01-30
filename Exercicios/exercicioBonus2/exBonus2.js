@@ -15,3 +15,8 @@ console.log(soma(2, 2));
 
 const par = (n) => n % 2 === 0;
 console.log(par(1));
+
+const usuario = (nome, idade, ativo) => ({ nome, idade, ativo: true });
+console.log(usuario("João", 19));
+let user = usuario("Renan", 29);
+console.log(user.nome);
