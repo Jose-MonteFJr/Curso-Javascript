@@ -12,7 +12,7 @@ const pessoa01 = {
 };
 
 console.log(pessoa01.nome); // Utilizo o . para chamar o atributo do objeto
-console.log(pessoa01.profissao);
+console.log(pessoa01["profissao"]); // Também posso utilizar [" "] para chamar o atributo
 console.log(pessoa01.idade);
 pessoa01.fala();
 
