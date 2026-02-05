@@ -1,5 +1,13 @@
 // Try catch - utilizado para tratar erros e exceções no código
-
+/**
+ * Quando utilizar try catch -
+ * Consumir API
+ * JSON.parse
+ * Acesso a dados externos
+ * Regras críticas
+ * Conversões perigosas
+ *
+ */
 try {
   // Try tenta executar, caso dê algum erro, envia para o bloco catch
   console.log(variavel); // Erro - a variavel não foi definida
@@ -12,17 +20,24 @@ console.log();
 // throw - Serve para lançar erros próprios, posso criar meu próprio erro
 // Exemplo
 
-const soma = (x, y) => {
-  if (typeof x !== "number" || typeof y !== "number") {
-    throw new Error("x e y precisam ser números!"); // Estou criando um novo error
+const cadastrarUsuario = (nome) => {
+  try {
+    if (!nome) {
+      throw new Error("Nome é obrigatório.");
+    }
+    console.log("Usuário cadastrado com sucesso.");
+    console.log(`Seja bem vindo ${nome}`);
+  } catch (err) {
+    console.log("Falha no cadastro: ", err.message);
   }
-
-  return x + y;
 };
 
+cadastrarUsuario("Antonio");
+
+// Exemplo com JSON
 try {
-  console.log(soma(7, 7));
-  console.log(soma("7", 7));
+  const dados = JSON.parse('{"nome": "Luis"'); // Erro - está faltando a } no final
+  console.log(dados.nome);
 } catch (err) {
-  console.log(err); // Salva o erro criado do throw no err
+  console.log("Erro: JSON inválido.");
 }
