@@ -1,5 +1,5 @@
 // Destructuring = tirar valores de um objeto ou array e colocar em variáveis
-
+// Obs - Em objetos, ordem não importa, o que importa é a chave(nome)
 const criarUsuario = (nome, idade, statusU) => ({
   nome,
   idade,
