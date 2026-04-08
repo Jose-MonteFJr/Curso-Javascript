@@ -14,6 +14,8 @@
  * - Trabalhar com imutabilidade(Não alterar os dados originais)
  */
 
+// # Arrays -
+
 // Copiar arrays
 
 const numeros = [1, 2, 4, 5];
@@ -33,6 +35,8 @@ const resultado = [...a, ...b];
 
 console.log(resultado);
 console.log();
+
+// # Objetos -
 
 // Copiar objetos
 
@@ -57,3 +61,49 @@ const usuario = {
 const usuarioAtualizado = { ...usuario, idade: 42 }; // A copia pode ser atualizada, não alterando a original(boa pratica)
 
 console.log(usuarioAtualizado);
+console.log();
+
+// Adicionar propriedades
+
+const usuarioCompleto = { ...usuario, ativo: true };
+
+console.log(usuarioCompleto);
+console.log();
+
+// Funções
+
+const numero = [5, 2];
+
+const soma = (a, b) => {
+  return a + b;
+};
+
+console.log(soma(...numero)); // Utiliza a copia de numero
+console.log();
+
+// Exemplo real
+
+// Simulando usuarios vindo do banco
+const user = {
+  id: 1,
+  nome: "Miguel",
+  idade: 23,
+};
+
+// Dados novos (Ex: request.body)
+const newData = {
+  idade: 25,
+  ativo: true,
+};
+
+// Atualizar sem mudar o original
+const updateUser = (user, updateData) => {
+  return {
+    ...user,
+    ...updateData,
+  };
+};
+
+const updateResult = updateUser(user, newData);
+
+console.log(updateResult);
